@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="_bg__entrypage_v1_1___2_color">#000000</color>
+    <color name="_bg__entrypage_v1_1___0_color">#000000</color>
+    <color name="cancel_color">#007aff</color>
+    <color name="search_field_color">#8e8e93</color>
+    <color name="___placeholder_label_color">#f0f2f0</color>
+    <color name="rectangle_1_color">#ffffff</color>
+    <color name="name_color">#000000</color>
+    <color name="burger">#007AFF</color>
+
+</resources>

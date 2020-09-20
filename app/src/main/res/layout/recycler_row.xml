@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/_bg__entrypage_v1_1___0_shape"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/black"
+        android:id="@+id/image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:weightSum="7"
+        android:padding="8dp"
+        android:background="@drawable/back"
+        android:layout_toRightOf="@+id/image">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:fontFamily="@font/proximaaltbold"
+        android:text="Article Title"
+        android:textAllCaps="true"
+        android:layout_toRightOf="@+id/image"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:maxLength="150"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:maxLines="4"
+        android:fontFamily="@font/proximanovaltlight"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/title"
+        android:text="Article Body"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/body"
+        android:layout_toRightOf="@+id/image"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/rating"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/body"
+            android:src="@drawable/ic_star_black_24dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/ratingNum"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="3"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@+id/rating"
+            android:layout_below="@+id/body"
+            android:text="  Rating - "
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/body"
+            android:layout_weight="1"
+            android:background="@drawable/ic_favorite_border_black_24dp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:id="@+id/share"
+            android:src="@drawable/ic_share_black_24dp"
+            android:layout_below="@+id/body"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/_bg__entrypage_v1_1___0_shape"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/black"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+        android:text="Article Title"
+        android:textAllCaps="true"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/title"
+        android:text="Article Body"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/body"
+        android:text="Rating   - "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/ratingNum"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/alegreya_sc_black_italic"
+        android:maxLength="200"
+        android:maxLines="5"
+        android:layout_toRightOf="@+id/rating"
+        android:layout_below="@+id/body"
+        android:text="Rating - "
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

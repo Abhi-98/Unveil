@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rates">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/rate"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:gravity="center"
+        android:id="@+id/starS"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rate">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="5+"
+            android:layout_weight="2"
+            android:id="@+id/star5"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="6+"
+            android:layout_weight="2"
+            android:id="@+id/star6"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="7+"
+            android:layout_weight="2"
+            android:id="@+id/star7"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:gravity="center"
+        android:id="@+id/starE"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/starS">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="8+"
+            android:layout_weight="2"
+            android:id="@+id/star8"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="9+"
+            android:layout_marginStart="8dp"
+            android:layout_weight="2"
+            android:id="@+id/star9"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ic_star_black_24dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/genres">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/genre"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="6"
+            android:gravity="center"
+            android:id="@+id/genreS"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/genre">
+
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Comedy"
+                android:layout_weight="2"
+                android:id="@+id/comedy"
+                android:background="@drawable/button_bg"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Romance"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:id="@+id/romance"
+                android:background="@drawable/button_bg"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Action"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:id="@+id/action"
+                android:background="@drawable/button_bg"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:gravity="center"
+            android:id="@+id/genreE"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/genreS">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Crime"
+                android:layout_weight="2"
+                android:id="@+id/crime"
+                android:background="@drawable/button_bg"
+                />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="Thriller"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:id="@+id/thriller"
+                android:background="@drawable/button_bg"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

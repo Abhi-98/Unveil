@@ -1,0 +1,171 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/drawer"
+    android:background="@drawable/_bg__entrypage_v1_1___0_shape"
+    android:layout_height="match_parent"
+    tools:context=".genreFilter">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@drawable/_bg__entrypage_v1_1___0_shape"/>
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:menu="@menu/menu_item"
+        app:headerLayout="@layout/header"
+        android:background="@drawable/_bg__entrypage_v1_1___0_shape"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff"/>
+
+
+
+    <RelativeLayout android:id="@+id/burger"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        >
+
+        <ImageView android:id="@+id/line_1"
+            android:src="@drawable/line_1"
+            android:contentDescription="line_1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="21dp"
+            android:layout_height="2dp" />
+
+        <ImageView android:id="@+id/line_2"
+            android:src="@drawable/line_2"
+            android:contentDescription="line_2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="20.916320800781dp"
+            android:layout_height="2dp" />
+
+        <ImageView android:id="@+id/line_3"
+            android:src="@drawable/line_3"
+            android:contentDescription="line_3"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="20.916320800781dp"
+            android:layout_height="2dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout android:id="@+id/navigation_bar___with_search___inactive"
+        android:layout_toRightOf="@+id/burger"
+        android:layout_width="350dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView android:id="@+id/separator"
+            android:src="@drawable/separator"
+            android:contentDescription="separator"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="48dp"
+            android:layout_width="414dp"
+            android:layout_height="0.5dp" />
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/___placeholder_label"
+            android:fontFamily="SF Pro Text"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/shape"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="55dp"
+            android:hint="Seach Shows..."
+            android:textColorHint="@android:color/black"
+            android:layout_width="310dp"
+            android:layout_height="35dp"
+            android:textColorHighlight="@android:color/white"
+            >
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/filter"
+            android:src="@drawable/ic_filter_m"
+            android:layout_toRightOf="@+id/___placeholder_label"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout android:id="@+id/repeat_grid_3"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

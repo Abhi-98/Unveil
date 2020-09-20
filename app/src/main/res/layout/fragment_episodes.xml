@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/_bg__entrypage_v1_1___0_shape"
+    tools:context=".EpisodesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Season"
+            android:id="@+id/ses"
+            android:layout_weight="1"
+            android:fontFamily="SF Pro Text"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:layout_toRightOf="@+id/ses"
+            android:layout_marginStart="10dp"
+            android:fontFamily="SF Pro Text"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:id="@+id/num"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/nme"
+            android:fontFamily="SF Pro Text"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_toRightOf="@+id/num"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:fontFamily="SF Pro Text"
+            android:textStyle="bold"
+            android:id="@+id/da"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/nme"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </LinearLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</FrameLayout>

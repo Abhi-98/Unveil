@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/_bg__entrypage_v1_1___0_shape"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4">
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="0dp"
+            android:id="@+id/img"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:id="@+id/btns"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/img"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/ntwrk"
+                    android:background="@drawable/backbutton"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Network: "
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:id="@+id/wb"
+                        android:layout_below="@+id/img"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Web Channel"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/webChannel"
+                        android:layout_below="@+id/summary"
+                        android:layout_toRightOf="@+id/wb"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"                    android:layout_height="60dp"
+                    android:background="@drawable/backbutton"            android:layout_below="@+id/ntwrk"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3"
+                    android:id="@+id/sts">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/stat"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="status"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/status"
+                        android:layout_weight="2"
+                        android:layout_toRightOf="@+id/stat"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"                    android:layout_height="60dp"
+                    android:background="@drawable/backbutton"            android:layout_below="@+id/sts"
+                    android:layout_weight="1"
+                    android:id="@+id/gnre"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Genre: "
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/gen"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="genre"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/genre"
+                        android:layout_toRightOf="@+id/gen" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"                    android:layout_height="60dp"
+                    android:background="@drawable/backbutton"            android:layout_weight="1"
+                    android:layout_below="@+id/gnre"
+                    android:id="@+id/typ"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Show Type: "
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/type"
+                        android:layout_below="@+id/gen"
+                        android:layout_marginStart="20dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="show type"
+                        android:textStyle="bold"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/showtype"
+                        android:layout_below="@+id/genre"
+                        android:layout_toRightOf="@+id/type"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"                    android:layout_height="60dp"
+                    android:background="@drawable/backbutton"            android:layout_weight="1"
+                    android:layout_below="@+id/typ"
+                    android:gravity="center"
+                    android:id="@+id/rt"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Rating: "
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/rate"
+                        android:layout_marginStart="20dp"/>
+
+                    <RatingBar
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:id="@+id/rating"
+                        android:isIndicator="true"
+                        android:max="10"
+                        android:layout_weight="2"
+                        android:numStars="10"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_toRightOf="@+id/rate"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"                    android:layout_height="60dp"
+                    android:background="@drawable/backbutton"
+                    android:id="@+id/prmr"
+                    android:layout_below="@+id/rt"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Premiered: "
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/site"
+                        android:layout_below="@+id/rate"
+                        android:layout_marginStart="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ofiicial site"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratregular"
+                        android:textColor="@android:color/black"            android:textSize="18sp"
+                        android:id="@+id/officialsite"
+                        android:layout_below="@+id/rating"
+                        android:layout_toRightOf="@+id/site"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:id="@+id/summary"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Summary"
+            android:paddingLeft="10dp"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserratregular"
+            android:layout_below="@+id/img"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
